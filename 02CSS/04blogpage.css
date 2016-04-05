@@ -1,0 +1,20 @@
+body{
+    width: 70%;
+    margin: 10px auto;
+    border: 10px solid lightgray;
+    padding: 10px;
+}
+
+.firstp{border-left: 5px lightgray solid;
+    padding-left: 5px;
+}
+
+.datep{
+    color: SkyBlue;
+    font-family: "Arial Black";
+}
+
+h2{ font-family: verdana; color:SlateGray;}
+hr{color: AliceBlue}
+
+p{font-family: Georgia}
