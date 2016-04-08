@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Todo</title>
+        <style>
+            div{background-color:azure;}
+            
+            .selected{color:green;}
+            .done {text-decoration: line-through; opacity: 0.5;}
+        </style>
+    </head>
+    <body>
+        <h2>Simple Todo</h2>
+        <div>
+            <ul>
+                <li>Wash Cat</li>
+                <li>Feed Cat</li>
+                <li>Wash Dog</li>
+            </ul>
+        </div>
+        <script>
+           var lis = document.querySelectorAll("li");
+           
+           for (var i = 0; i < lis.length; i++){
+               lis[i].addEventListener("mouseover", function(){
+                   this.classList.add("selected");
+               });
+               
+               lis[i].addEventListener("mouseout", function(){
+                   this.classList.remove("selected");
+               });
+               
+               lis[i].addEventListener("click", function(){
+                   this.classList.toggle("done");
+               });
+           }
+        </script>
+    </body>
+</html>
