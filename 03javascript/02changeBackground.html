@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Selector Color Changer</title>
+        <style>
+            div{
+                background-color: linen;
+                height:150px;
+                width:275px;
+                margin: 60px auto;
+            }
+            
+            p{
+                padding:75px ;
+                font-family:"sans serif";
+                color:slategray;
+            }
+            
+            h2{ text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h2>Color Randomizer</h2>
+        <div>
+            <p>Click to Change</p>
+        </div>
+        <script>
+            console.log("Hi");
+            var randomColor = function(){
+var colorPalette = ["lilac", "pink", "lime", "maroon", "fuchsia", "purple", "teal", "aliceblue", "orange", "bisque", "blanchalmond", "chocolate", "burlywood", "cornflowerblue", "coral", "cornsilk", "darkgoldenrod", "crimson", "darkolivegreen", "darksalmon", "darkseagreen", "deeppink"];
+this.style.backgroundColor = colorPalette[Math.round(Math.random()*22)]
+};
+var myDiv = document.querySelector("div");
+myDiv.addEventListener("click", randomColor);
+        </script>
+    </body>
+</html>
